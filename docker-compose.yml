@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: joupi-db-dev
+    environment:
+      POSTGRES_USER: joupi
+      POSTGRES_PASSWORD: joupi
+      POSTGRES_DB: joupi_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - joupi_db_data:/var/lib/postgresql/data
+
+volumes:
+  joupi_db_data:
+    driver: local
