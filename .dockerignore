@@ -1,5 +1,30 @@
-*
-!target/*-runner
-!target/*-runner.jar
-!target/lib/*
-!target/quarkus-app/*
+# Arquivos do Git
+.git
+.gitignore
+
+# Artefatos de build gerados localmente (não devem ir para o contexto)
+target/
+build/
+
+# Arquivos de IDE (exemplo: IntelliJ, Eclipse)
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+
+# Arquivos específicos do SO
+.DS_Store
+Thumbs.db
+
+# Dependências baixadas pelo Maven Wrapper (se usar)
+.mvn/wrapper/maven-wrapper.jar
+
+# Arquivos de configuração local (se houver)
+.env

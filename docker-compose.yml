@@ -1,16 +1,16 @@
 services:
   db:
     image: postgres:16-alpine
-    container_name: joupi-db-dev
+    container_name: skeleton-db-dev
     environment:
-      POSTGRES_USER: joupi
-      POSTGRES_PASSWORD: joupi
-      POSTGRES_DB: joupi_db
+      POSTGRES_USER: skeleton
+      POSTGRES_PASSWORD: skeleton
+      POSTGRES_DB: skeleton_db
     ports:
       - "5433:5432"
     volumes:
-      - joupi_db_data:/var/lib/postgresql/data
+      - skeleton_db_data:/var/lib/postgresql/data
 
 volumes:
-  joupi_db_data:
+  skeleton_db_data:
     driver: local

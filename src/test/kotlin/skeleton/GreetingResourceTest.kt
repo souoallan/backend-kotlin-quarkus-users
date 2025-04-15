@@ -1,4 +1,4 @@
-package joupi
+package skeleton
 
 import io.quarkus.test.junit.QuarkusTest
 import io.restassured.RestAssured.given
